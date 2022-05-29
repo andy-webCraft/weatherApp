@@ -1,0 +1,63 @@
+.wrapper {
+  height: 100%;
+}
+.body {
+  height: 100%;
+  background-color: antiquewhite;
+  padding: 20px 16px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 1px;
+    height: 85%;
+    background-color: #00000030;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+}
+.top {
+  height: 28%;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  font-size: 26px;
+  font-weight: 500;
+  align-self: center;
+  margin: 0 10px;
+}
+.date {
+}
+.description {
+  margin: 6px 0 0 10px;
+}
+.temperature {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 10px;
+  & span {
+    font-size: 18px;
+  }
+}
+.feelsLike {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.list {
+  & li {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    padding: 16px;
+  }
+  .time {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,81 @@
+.wrapper {
+  overflow: hidden;
+}
+.body {
+  width: 38px;
+  height: 200px;
+  background: #38383f;
+  border: 9px solid #2a2a2e;
+  border-radius: 20px;
+  margin: 0 15px 50px;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    width: 68px;
+    height: 68px;
+    background-color: #3dcadf;
+    border-radius: 50%;
+    border: 9px solid #2a2a2e;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -58px;
+    left: 50%;
+    z-index: -3;
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background: #38383f;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+  }
+}
+.temperature {
+  width: 100%;
+  max-height: 100%;
+  background: linear-gradient(#f17a65 35%, #3dcadf 100%) no-repeat bottom;
+  background-size: 100% 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  bottom: -1px;
+}
+.graduations {
+  width: 100%;
+  height: 100%;
+  color: #ffffffba;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 5;
+  & span {
+    font-size: 10px;
+    position: absolute;
+    left: 0px;
+  }
+  & .t30 {
+    top: 0;
+  }
+  & .t20 {
+    top: calc(16.6% - 5px);
+  }
+  & .t10 {
+    top: calc(33.2% - 5px);
+  }
+  & .t0 {
+    top: calc(50% - 5px);
+  }
+  & .t_10 {
+    bottom: calc(33.2% - 5px);
+  }
+  & .t_20 {
+    bottom: calc(16.6% - 5px);
+  }
+  & .t_30 {
+    bottom: 0;
+  }
+}

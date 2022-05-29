@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 1640px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+@media (max-width: 991px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+}

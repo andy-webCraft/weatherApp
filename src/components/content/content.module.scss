@@ -1,0 +1,26 @@
+.wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+  transition: 1s ease-in-out;
+  position: relative;
+}
+.search {
+  max-width: 700px;
+  min-width: 300px;
+  width: 100%;
+}
+.forecast {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px 10px;
+  }
+}

@@ -1,39 +1,65 @@
-.App {
-  text-align: center;
+.app {
+  overflow: hidden;
+}
+.hourly-scrollbar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  position: relative;
+  z-index: 5;
+}
+.hourly-scrollbar div {
+  height: 100%;
+  background-color: #1976d2;
+  border-radius: 20px;
+}
+.hourly-slider .swiper-slide:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+.hourly-slider .swiper-slide:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loadForecast {
+  padding: 5% 20px 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.default-bg {
+  background-image: url(../src/assets/backgrounds/default-bg.png);
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.clear-day-bg {
+  background-image: url(../src/assets/backgrounds/clear-day-bg.png);
+  background-color: #31ace9;
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.clear-night-bg {
+  background-image: url(../src/assets/backgrounds/clear-night-bg.png);
+  background-color: #002b3d;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.clouds-day-bg {
+  background-image: url(../src/assets/backgrounds/clouds-day-bg.png);
+  background-color: #46a3cc;
+}
+.clouds-night-bg {
+  background-image: url(../src/assets/backgrounds/clouds-night-bg.png);
+  background-color: #002b3d;
+}
+.rain-day-bg {
+  background-image: url(../src/assets/backgrounds/rain-day-bg.png);
+  background-color: #77b1ca;
+}
+.rain-night-bg {
+  background-image: url(../src/assets/backgrounds/rain-night-bg.png);
+  background-color: #002b3d;
+}
+.snow-day-bg {
+  background-image: url(../src/assets/backgrounds/snow-day-bg.png);
+  background-color: #94bfd2;
+}
+.snow-night-bg {
+  background-image: url(../src/assets/backgrounds/snow-night-bg.png);
+  background-color: #002b3d;
 }
