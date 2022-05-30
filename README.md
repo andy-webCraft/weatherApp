@@ -1,11 +1,11 @@
-# Weather Forecast App ⛅
+## Weather Forecast App ⛅
 
-### 😲 demo: https://andy-webcraft.github.io/weatherApp
+😲 demo: https://andy-webcraft.github.io/weatherApp
 
-### 🛠 Tools: React JS / Redux / Axios / TypeScript / Material UI
+🛠 Tools: React JS / Redux / Axios / TypeScript / Material UI
     
-## 🌐 API: 
+### 🌐 API: 
 
-### weather & geocoding API - OpenWeatherMap (https://openweathermap.org/)
+weather & geocoding API - OpenWeatherMap (https://openweathermap.org/)
 
-### suggestion API (only RU) - DaData (https://dadata.ru/)
+suggestion API (only RU) - DaData (https://dadata.ru/)
