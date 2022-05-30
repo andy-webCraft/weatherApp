@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/weatherApp/static/css/main.2f5a374f.css",
-    "main.js": "/weatherApp/static/js/main.f1e1d6c4.js",
-    "static/media/clear-night-bg.png": "/weatherApp/static/media/clear-night-bg.91584a914637314f511a.png",
-    "static/media/snow-night-bg.png": "/weatherApp/static/media/snow-night-bg.9b503e6fe826a65666c8.png",
-    "static/media/clouds-night-bg.png": "/weatherApp/static/media/clouds-night-bg.8c117054bf310073b67e.png",
-    "static/media/clouds-day-bg.png": "/weatherApp/static/media/clouds-day-bg.4887844b144f8f9b933a.png",
+    "main.css": "/weatherApp/static/css/main.29bf852b.css",
+    "main.js": "/weatherApp/static/js/main.7da5569a.js",
+    "static/media/clear-night-bg.png": "/weatherApp/static/media/clear-night-bg.026434bab464f2435020.png",
+    "static/media/clouds-day-bg.png": "/weatherApp/static/media/clouds-day-bg.d2d2677d1747132242a0.png",
+    "static/media/clouds-night-bg.png": "/weatherApp/static/media/clouds-night-bg.5836ca0efbae72db3ceb.png",
+    "static/media/snow-night-bg.png": "/weatherApp/static/media/snow-night-bg.3af9c1d10e31e4f80a2f.png",
     "static/media/snow-day-bg.png": "/weatherApp/static/media/snow-day-bg.d8aeb62c1bd225e44238.png",
-    "static/media/rain-night-bg.png": "/weatherApp/static/media/rain-night-bg.f386f25190eca6d662e8.png",
-    "static/media/rain-day-bg.png": "/weatherApp/static/media/rain-day-bg.dc40edb5f84d1536e829.png",
+    "static/media/rain-day-bg.png": "/weatherApp/static/media/rain-day-bg.8a27121a17dfe558e68b.png",
     "static/media/clear-day-bg.png": "/weatherApp/static/media/clear-day-bg.c5102bdad0f37939a5b2.png",
+    "static/media/rain-night-bg.png": "/weatherApp/static/media/rain-night-bg.d846b0fe7f808f9be210.png",
     "static/media/default-bg.png": "/weatherApp/static/media/default-bg.8839d6453bf5e4d4d900.png",
+    "static/media/logoIcon.png": "/weatherApp/static/media/logoIcon.000ca0bff5d522377e37.png",
     "index.html": "/weatherApp/index.html",
-    "main.2f5a374f.css.map": "/weatherApp/static/css/main.2f5a374f.css.map",
-    "main.f1e1d6c4.js.map": "/weatherApp/static/js/main.f1e1d6c4.js.map"
+    "main.29bf852b.css.map": "/weatherApp/static/css/main.29bf852b.css.map",
+    "main.7da5569a.js.map": "/weatherApp/static/js/main.7da5569a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f5a374f.css",
-    "static/js/main.f1e1d6c4.js"
+    "static/css/main.29bf852b.css",
+    "static/js/main.7da5569a.js"
   ]
 }
