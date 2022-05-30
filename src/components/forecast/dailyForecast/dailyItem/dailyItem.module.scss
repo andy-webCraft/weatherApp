@@ -26,7 +26,8 @@
   margin-bottom: 4px;
 }
 .weekDay {
-  margin-bottom: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .description {
   text-align: center;
@@ -66,6 +67,11 @@
   }
   .left {
     width: 100%;
+  }
+  .weekDay {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1882352941);
   }
   .temperature {
     text-align: center;

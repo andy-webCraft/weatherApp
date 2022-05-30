@@ -34,6 +34,7 @@ const HourlyForecast = ({
         className="hourly-slider"
         style={{ overflow: "visible" }}
         modules={[Navigation, Scrollbar, Mousewheel]}
+        freeMode
         scrollbar={{ el: ".hourly-scrollbar", draggable: true }}
         mousewheel={true}
         slidesPerView={1}
@@ -42,7 +43,7 @@ const HourlyForecast = ({
           1300: { slidesPerView: 5 },
           1050: { slidesPerView: 4 },
           768: { slidesPerView: 3 },
-          400: { slidesPerView: 2 },
+          375: { slidesPerView: 2 },
         }}
       >
         {hourlyList}

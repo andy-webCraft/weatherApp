@@ -1,5 +1,13 @@
+#root {
+  height: 100%;
+}
 .app {
-  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
+}
+.app .loadForecast {
+  justify-content: flex-start;
+  padding: 80px 20px 20px;
 }
 .hourly-scrollbar {
   width: 100%;
@@ -13,6 +21,7 @@
   height: 100%;
   background-color: #1976d2;
   border-radius: 20px;
+  cursor: grabbing;
 }
 .hourly-slider .swiper-slide:first-child {
   border-top-left-radius: 20px;
@@ -25,9 +34,6 @@
   overflow: hidden;
 }
 
-.loadForecast {
-  padding: 5% 20px 20px;
-}
 .default-bg {
   background-image: url(../src/assets/backgrounds/default-bg.png);
 }
@@ -37,23 +43,23 @@
 }
 .clear-night-bg {
   background-image: url(../src/assets/backgrounds/clear-night-bg.png);
-  background-color: #002b3d;
+  background-color: #00091b;
 }
 .clouds-day-bg {
   background-image: url(../src/assets/backgrounds/clouds-day-bg.png);
-  background-color: #46a3cc;
+  background-color: #688ea3;
 }
 .clouds-night-bg {
   background-image: url(../src/assets/backgrounds/clouds-night-bg.png);
-  background-color: #002b3d;
+  background-color: #00091b;
 }
 .rain-day-bg {
   background-image: url(../src/assets/backgrounds/rain-day-bg.png);
-  background-color: #77b1ca;
+  background-color: #607278;
 }
 .rain-night-bg {
   background-image: url(../src/assets/backgrounds/rain-night-bg.png);
-  background-color: #002b3d;
+  background-color: #00091b;
 }
 .snow-day-bg {
   background-image: url(../src/assets/backgrounds/snow-day-bg.png);
@@ -61,5 +67,5 @@
 }
 .snow-night-bg {
   background-image: url(../src/assets/backgrounds/snow-night-bg.png);
-  background-color: #002b3d;
+  background-color: #00091b;
 }
