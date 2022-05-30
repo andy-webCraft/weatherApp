@@ -1,5 +1,6 @@
 .wrapper {
   height: 100%;
+  cursor: grab;
 }
 .body {
   height: 100%;
@@ -59,5 +60,13 @@
   }
   .time {
     font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .body {
+    padding: 10px;
+  }
+  .top {
+    height: 25%;
   }
 }

@@ -31,24 +31,25 @@ const ForecastContainer = () => {
   return (
     <div className={s.wrapper}>
       <TabContext value={viewBlock}>
-        
-        <div className={s.top}>
-          {location && (
-            <span className={s.city}>
-              {location.data.city ? location.data.city : location.value}
-            </span>
-          )}
+        {current && (
+          <div className={s.top}>
+            {location && (
+              <span className={s.city}>
+                {location.data.city ? location.data.city : location.value}
+              </span>
+            )}
 
-          <TabList
-            className={s.tabList}
-            variant="fullWidth"
-            onChange={handleToggle}
-          >
-            <Tab className={s.tabBtn} label="Сейчас" value="current" />
-            <Tab className={s.tabBtn} label="На 48 часов" value="hourly" />
-            <Tab className={s.tabBtn} label="На неделю" value="daily" />
-          </TabList>
-        </div>
+            <TabList
+              className={s.tabList}
+              variant="fullWidth"
+              onChange={handleToggle}
+            >
+              <Tab className={s.tabBtn} label="Сейчас" value="current" />
+              <Tab className={s.tabBtn} label="На 48 часов" value="hourly" />
+              <Tab className={s.tabBtn} label="На неделю" value="daily" />
+            </TabList>
+          </div>
+        )}
 
         {isRequesting ? (
           <Loader />

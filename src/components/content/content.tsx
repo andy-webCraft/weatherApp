@@ -10,8 +10,12 @@ import s from "./content.module.scss";
 import weatherBg from "../../tools/weatherBg";
 import { getUserLocationAsync } from "../../redux/reducer/location-reducer";
 import Notification from "../common/notification/notification";
-import { setNewNotification } from "../../redux/reducer/app-reducer";
+import {
+  requestingToggle,
+  setNewNotification,
+} from "../../redux/reducer/app-reducer";
 import cn from "classnames";
+import logoIcon from "../../assets/img/logoIcon.png";
 
 const Content = () => {
   const dispatch = useTypedDispatch();
@@ -21,6 +25,7 @@ const Content = () => {
 
   useEffect(() => {
     const getUserForecast = async () => {
+      dispatch(requestingToggle(true));
       try {
         const locationData = await dispatch(getUserLocationAsync()).unwrap();
         dispatch(
@@ -34,10 +39,11 @@ const Content = () => {
           setNewNotification({
             type: "info",
             message:
-              "Чтобы автоматически получать прогноз погоды в вашем регионе, разрешите получение геоданных",
+              "Чтобы автоматически получить прогноз погоды в вашем регионе, разрешите получение геоданных или включите GPS",
           })
         );
       }
+      dispatch(requestingToggle(false));
     };
 
     getUserForecast();
@@ -51,15 +57,17 @@ const Content = () => {
     <div className={cn(s.wrapper, { loadForecast: current }, background)}>
       <Notification />
 
+      {!current && (
+        <img className={s.logo} src={logoIcon} alt="logo" />
+      )}
+
       <div className={s.search}>
         <SearchContainer />
       </div>
 
-      {current && (
-        <div className={s.forecast}>
-          <ForecastContainer />
-        </div>
-      )}
+      <div className={s.forecast}>
+        <ForecastContainer />
+      </div>
     </div>
   );
 };

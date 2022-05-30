@@ -52,9 +52,8 @@ const SearchContainer = () => {
     const inputValue: string = e.currentTarget["searchInput"].value;
     const target = options.find((item) => item.value === inputValue);
 
+    dispatch(requestingToggle(true));
     try {
-      dispatch(requestingToggle(true));
-
       let locationData;
 
       if (target) {
@@ -82,7 +81,6 @@ const SearchContainer = () => {
 
       dispatch(setLocation(locationData));
       dispatch(addLastSearching(locationData));
-      dispatch(requestingToggle(false));
     } catch (error: any) {
       if (error.name === "TypeError") {
         dispatch(
@@ -94,8 +92,8 @@ const SearchContainer = () => {
       } else {
         dispatch(setNewNotification({ type: "error", message: error.message }));
       }
-      dispatch(requestingToggle(false));
     }
+    dispatch(requestingToggle(false));
   };
 
   return (
